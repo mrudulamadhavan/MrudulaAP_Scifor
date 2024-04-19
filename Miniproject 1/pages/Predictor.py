@@ -17,7 +17,7 @@ st.title("red[Bike Sharing Demand Predictor]")
 
 #resources path
 #FILE_DIR1 = os.path.dirname(os.path.abspath("C://Users//Mrudula Madhavan//Desktop//scifor//Project//pages//Predictor.py"))
-FILE_DIR1 = os.path.dirname(os.path.abspath("Miniproject 1//pages//Predictor.py"))
+FILE_DIR1 = os.path.dirname(os.path.abspath("Miniproject_1//pages//Predictor.py"))
 FILE_DIR = os.path.join(FILE_DIR1,os.pardir)
 dir_of_interest = os.path.join(FILE_DIR, "resources")
 
