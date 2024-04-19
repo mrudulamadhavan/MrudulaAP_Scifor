@@ -6,7 +6,7 @@ import os
 import numpy as np
 
 # absolute path to this file
-FILE_DIR = os.path.dirname(os.path.abspath("C://Users//Mrudula Madhavan//Desktop//scifor//MainProject//pages//About Dataset.py"))
+FILE_DIR = os.path.dirname(os.path.abspath("MainProject//pages//About Dataset.py"))
 
 # absolute path to this file's root directory
 PARENT_DIR = os.path.join(FILE_DIR, os.pardir)
