@@ -188,7 +188,7 @@ xgb.fit(X,y)
 
 # Prediction
 # Prediction
-if st.button('**Predict Steps Counts**'):
+if st.button(':brown[**Predict Steps Counts**]'):
     if any([weight == 0, height == 0]):
         st.error("Please enter all details to continue.")
         if st.button('Continue'):
