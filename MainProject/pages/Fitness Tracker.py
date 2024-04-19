@@ -16,7 +16,7 @@ st.markdown("<h1 style='text-align: center; color: red;'>Know your Fitness Level
 
 
 #resources path
-FILE_DIR1 = os.path.dirname(os.path.abspath("C://Users//Mrudula Madhavan//Desktop//scifor//MainProject//pages//Predictor.py"))
+FILE_DIR1 = os.path.dirname(os.path.abspath("MainProject//pages//Predictor.py"))
 # FILE_DIR1 = os.path.dirname(os.path.abspath("MainProject//pages//Predictor.py"))
 FILE_DIR = os.path.join(FILE_DIR1,os.pardir)
 dir_of_interest = os.path.join(FILE_DIR, "resources")
