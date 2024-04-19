@@ -11,7 +11,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # absolute path to this file
 
-FILE_DIR = os.path.dirname(os.path.abspath("MrudulaAP_Scifor//Miniproject_1//pages//Data Analysis.py"))
+FILE_DIR = os.path.dirname(os.path.abspath("Miniproject_1//pages//Data Analysis.py"))
 # absolute path to this file's root directory
 PARENT_DIR = os.path.join(FILE_DIR, os.pardir)
 # absolute path of directory_of_interest
