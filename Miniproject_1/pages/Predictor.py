@@ -13,7 +13,7 @@ st.set_page_config(page_title="Bike Sharing Demand Predictor", page_icon="https:
                    layout="wide")
 
 #import model
-st.title("red[Bike Sharing Demand Predictor]")
+st.title(":red[Bike Sharing Demand Predictor]")
 
 #resources path
 #FILE_DIR1 = os.path.dirname(os.path.abspath("C://Users//Mrudula Madhavan//Desktop//scifor//Project//pages//Predictor.py"))
