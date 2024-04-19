@@ -6,7 +6,7 @@ import os
 import numpy as np
 
 #resources path
-FILE_DIR1 = os.path.dirname(os.path.abspath("C://Users//Mrudula Madhavan//Desktop//scifor//MainProject//pages//Recommendations.py"))
+FILE_DIR1 = os.path.dirname(os.path.abspath("MainProject//pages//Recommendations.py"))
 FILE_DIR = os.path.join(FILE_DIR1,os.pardir)
 dir_of_interest = os.path.join(FILE_DIR, "resources")
 
