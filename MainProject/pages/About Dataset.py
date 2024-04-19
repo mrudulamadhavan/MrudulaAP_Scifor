@@ -85,8 +85,7 @@ else:
     pass
 
 
-if st.button('Continue'):
-    st.experimental_rerun()
+
 
 
 
