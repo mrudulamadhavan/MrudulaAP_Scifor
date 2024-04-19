@@ -32,7 +32,7 @@ DATA_PATH1=os.path.join(DATA_PATH, "fitnesstracker_dataset.csv")
 df=pd.read_csv(DATA_PATH1)
 df1 = df.copy
 
-xgb = pickle.load(open('C://Users//Mrudula Madhavan//Desktop//scifor//MainProject//xgb_model.pkl','rb'))
+xgb = pickle.load(open('MainProject//xgb_model.pkl','rb'))
 
 # Function to calculate BMI category
 def get_bmi_category(bmi):
