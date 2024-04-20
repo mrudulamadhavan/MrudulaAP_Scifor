@@ -79,7 +79,22 @@ with col3:
 
 col3, col4 = st.columns(2)
 with col3:  
-    weight = abs(float(st.text_input("Weight (kg)  :", value='0.0')))
+    # weight = abs(float(st.text_input("Weight (kg)  :", value='0.0')))
+    # Get user input for weight in kilograms, with a default value of '0.0'
+    weight_input = st.text_input("Weight (kg):", value='0.0')
+    
+    # Check if the input is a valid numeric value
+    if weight_input.replace('.', '', 1).isdigit():
+        # If it is, convert the input value to a float without stripping leading zeros
+        weight_kg = float(weight_input)
+        # Check if the weight value is non-negative
+        if weight_kg < 0:
+            st.error("Weight must be a non-negative value.")
+        else:
+            # Take the absolute value of the weight
+            absolute_weight = abs(weight_kg)
+    else:
+        st.error("Please enter a valid numeric value for weight.")
 with col4:  
     height = abs(float(st.text_input("Height (m) :  ", value='0.0')))
 
