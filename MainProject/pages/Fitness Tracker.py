@@ -96,7 +96,7 @@ if st.button('**Calculate BMI**'):
         bmi = round(bmi, 1)
         bmi_category = get_bmi_category(bmi)
         st.write("BMI : <span style='font-size: 20px; color: red'><b>{}</b></span>".format(bmi), unsafe_allow_html=True)
-        st.write("<span style='font-size: 20px; color: green'><b>{}</b></span>".format(bmi_category), unsafe_allow_html=True)
+        st.write("Observation : <span style='font-size: 20px; color: green'><b>{}</b></span>".format(bmi_category), unsafe_allow_html=True)
 
 st.write("------------------------------------------------------------------------------------------")
 
