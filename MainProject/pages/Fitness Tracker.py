@@ -38,14 +38,14 @@ xgb = pickle.load(open('MainProject//xgb_model.pkl','rb'))
 def get_bmi_category(bmi):
     if bmi < 18.5:
         
-        return 'Underweight'
+        return 'You are considered UNDERWEIGHT and possibly malnourished.'
     elif 18.5 <= bmi < 25:
         
-        return 'Normal Weight'
+        return 'You are within a healthy weight range for young and middle-aged adults.'
     elif 25 <= bmi < 30:
-        return 'Overweight'
+        return 'You are considered OVERWEIGHT.'
     else:
-        return 'Obese'
+        return 'You are considered OBESE.'
 
 
 def prediction(dayname,agegroup,gender,weight,height,sleeptime,sedentarytime,activetime,totaldistance):
