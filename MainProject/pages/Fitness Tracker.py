@@ -68,14 +68,6 @@ def prediction(dayname,agegroup,gender,weight,height,sleeptime,sedentarytime,act
 
 st.write('<h5 span style="color:brown"><b>Enter the details below :</b></h5></span>', unsafe_allow_html=True)
 
-col1,col2,col3 = st.columns(3)
-with col1:
-    dayname = st.selectbox("Activity Day", ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'])
-with col2:  
-    agegroup = st.selectbox("Age Group", ['18-24', '25-34', '35-44', '45-54', '55-64', '65+'])
-with col3:  
-    gender = st.selectbox("Gender", ['Male','Female'])
-
 
 col3, col4 = st.columns(2)
 with col3:  
@@ -100,7 +92,13 @@ if st.button('**Calculate BMI**'):
 
 st.write("------------------------------------------------------------------------------------------")
 
-
+col1,col2,col3 = st.columns(3)
+with col1:
+    dayname = st.selectbox("Activity Day", ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'])
+with col2:  
+    agegroup = st.selectbox("Age Group", ['18-24', '25-34', '35-44', '45-54', '55-64', '65+'])
+with col3:  
+    gender = st.selectbox("Gender", ['Male','Female'])
 
 
 
