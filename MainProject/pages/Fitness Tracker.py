@@ -205,8 +205,7 @@ if st.button(':brown[**Predict Steps Counts**]'):
         price = prediction(dayname, agegroup, gender, weight, height, sleeptime, sedentarytime, activetime, totaldistance)
         step_cnt = abs(int(price)) # Ensure step count is non-negative and integer
         st.subheader(":blue[The Predicted Value for Step Counts :] :green[{}]".format(step_cnt))
-        if st.button('Continue'):
-            st.experimental_rerun()
+        
 
 
     
