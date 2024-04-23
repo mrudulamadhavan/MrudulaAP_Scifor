@@ -68,7 +68,7 @@ def prediction(dayname,agegroup,gender,weight,height,sleeptime,sedentarytime,act
 
 st.write('<h5 span style="color:brown"><b>Enter the details below :</b></h5></span>', unsafe_allow_html=True)
 
-col1,col2,col3 = st.columns(2)
+col1,col2,col3 = st.columns(3)
 with col1:
     dayname = st.selectbox("Activity Day", ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'])
 with col2:  
