@@ -58,8 +58,8 @@ def prediction(dayname,agegroup,gender,weight,height,sleeptime,sedentarytime,act
     gender_encoded = gender_map.get(gender, 0)
     
     # Prepare the input features for prediction
-    features = [[dayname_encoded, agegroup_encoded, gender_encoded, weight, height, sleeptime, 
-                 sedentarytime, activetime, totaldistance]]
+    features = [[dayname_encoded, agegroup_encoded, gender_encoded, weight, height, sleeptime, sedentarytime, activetime, totaldistance]]
+    
     
     prediction = xgb.predict(features)
     return prediction[0]  # Return the predicted value
@@ -68,7 +68,7 @@ def prediction(dayname,agegroup,gender,weight,height,sleeptime,sedentarytime,act
 
 st.write('<h5 span style="color:brown"><b>Enter the details below :</b></h5></span>', unsafe_allow_html=True)
 
-col1,col2,col3 = st.columns(3)
+col1,col2,col3 = st.columns(2)
 with col1:
     dayname = st.selectbox("Activity Day", ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'])
 with col2:  
@@ -195,11 +195,15 @@ if st.button(':brown[**Predict Steps Counts**]'):
         if st.button('Continue'):
             st.experimental_rerun()
     elif totaldistance == 0:
-        price = prediction(dayname, agegroup, gender, weight, height, sleeptime, sedentarytime, activetime, totaldistance)
-        step_cnt = abs(max(0,int(price))) # Ensure step count is non-negative and integer
-        st.subheader(":blue[The Predicted Value for Step Counts :] :green[{}]".format(step_cnt))
-        if st.button('Continue'):
-            st.experimental_rerun()
+        if gender == 0.0:
+            price = prediction(dayname, agegroup, gender, weight, height, sleeptime, sedentarytime, activetime, totaldistance) + 8
+            step_cnt = abs(max(0,int(price))) # Ensure step count is non-negative and integer
+            st.subheader(":blue[The Predicted Value for Step Counts :] :green[{}]".format(step_cnt))
+        else:
+            price = prediction(dayname, agegroup, gender, weight, height, sleeptime, sedentarytime, activetime, totaldistance) 
+            step_cnt = abs(max(0,int(price))) # Ensure step count is non-negative and integer
+            st.subheader(":blue[The Predicted Value for Step Counts :] :green[{}]".format(step_cnt))
+        
 
     else:
         price = prediction(dayname, agegroup, gender, weight, height, sleeptime, sedentarytime, activetime, totaldistance)
