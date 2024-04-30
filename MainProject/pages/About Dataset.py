@@ -59,7 +59,7 @@ st.write('----------------------------------------------------------------------
 
 
 if (status == 'Overview of dataset'):    
-    st.dataframe(df.head(8))
+    st.dataframe(df.sample(4))
 
 elif (status == 'Shape'):
     rows = df.count()[0]
