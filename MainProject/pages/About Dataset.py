@@ -14,10 +14,9 @@ PARENT_DIR = os.path.join(FILE_DIR, os.pardir)
 dir_of_interest = os.path.join(PARENT_DIR, "resources")
 
 
-st.header(":green[Overview ]")
-st.write("<div style='text-align: justify'>In today's fast-paced world, where people are increasingly conscious about their health and fitness.There is a growing demand for accessible and convenient solutions to help individuals achieve their fitness goals.However, with busy schedules and limited access to professional trainers, many individuals struggle to maintain a consistent fitness routine and make healthy lifestyle choices.</div>", unsafe_allow_html=True)
-
 st.header(":green[Problem Statement ]")
+st.write("<div style='text-align: justify'>In today's fast-paced world, where people are increasingly conscious about their health and fitness.There is a growing demand for accessible and convenient solutions to help individuals achieve their fitness goals.However, with busy schedules and limited access to professional trainers, many individuals struggle to maintain a consistent fitness routine and make healthy lifestyle choices.</div>", unsafe_allow_html=True)
+st.write("")
 st.write("<div style='text-align: justify'>In today's digital era, where the importance of health and fitness is increasingly recognized, there is a growing need for innovative solutions that leverage technology to promote physical activity, healthy eating habits, and overall well-being.</div>", unsafe_allow_html=True)
 st.write("")
 st.write("<div style='text-align: justify'>Addressing this dynamic aspect of fitness oriented lifestyle, here we aim to develop a comprehensive and user-centric fitness app that empowers individuals to lead healthier lifestyles, achieve their fitness goals, and cultivate sustainable habits through personalized guidance, tracking tools, and community support.</div>", unsafe_allow_html=True)
